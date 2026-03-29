@@ -28,19 +28,19 @@ const caseStudies = [
   {
     slug: "global-transparency-reporting",
     title: "Standardizing Global Transparency Reporting Across Countries",
-    summary: "Supported complex reporting across regions by bringing more structure to data, formats, and reporting logic.",
+    summary: "Standardized reporting across multiple countries with different regulatory formats, improving consistency and reducing manual effort.",
     tags: ["Compliance", "Reporting", "Global"],
   },
   {
     slug: "grants-workflow-platform",
     title: "Designing a Grants, Donations & Sponsorship Workflow Platform",
-    summary: "Helped structure and improve a multi-team workflow spanning request intake, approvals, and payment processing.",
+    summary: "Designed and improved a multi-team workflow covering request intake, approvals, and SAP payment integration, improving visibility and reducing processing delays.",
     tags: ["Workflow", "SAP", "Stakeholders"],
   },
   {
     slug: "ai-text-summarization",
     title: "Introducing AI-Assisted Text Summarization",
-    summary: "Worked on AI-enabled enhancements to reduce manual review effort and improve usability.",
+    summary: "Introduced AI-based text summarization to reduce manual review effort and improve efficiency in document-heavy workflows.",
     tags: ["AI", "Enterprise", "Efficiency"],
   },
 ]
