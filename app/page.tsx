@@ -143,9 +143,9 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="px-6 py-16 lg:py-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-3xl animate-fade-in">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] text-white mb-4">
+<div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+<div className="animate-fade-in">          
+  <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] text-white mb-4">
               Hi, I&apos;m Neha Barve
             </h1>
 
@@ -180,15 +180,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 animate-fade-in delay-1">
-            {credibilityCards.map((card) => (
+<div className="grid grid-cols-2 gap-4 animate-fade-in delay-1">     
+  {credibilityCards.map((card) => (
               <div
                 key={card.title}
-                className="p-6 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors"
-              >
-                <card.icon className="w-8 h-8 text-primary mb-4" />
-                <h3 className="font-semibold mb-2">{card.title}</h3>
-                <p className="text-sm text-muted-foreground">{card.text}</p>
+                className="p-4 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors">
+                <card.icon className="w-6 h-6 text-primary mb-3" />
+               <h3 className="text-sm font-semibold mb-1">{card.title}</h3>
+                <p className="text-xs text-muted-foreground">{card.text}</p>
               </div>
             ))}
           </div>
