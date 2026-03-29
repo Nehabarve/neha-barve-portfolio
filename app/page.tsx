@@ -174,45 +174,48 @@ export default function Home() {
           <p className="text-muted-foreground max-w-2xl"> Product work focused on solving real operational problems across enterprise platforms and regulated environments.</p>
           </div>
 
-          <div className="grid gap-6 animate-fade-in delay-1">
-            {caseStudies.map((study) => (
-              <Link
-                key={study.slug}
-                href={`/case-studies/${study.slug}`}
-               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+        <div className="grid gap-6 animate-fade-in delay-1">
+  {caseStudies.map((study) => (
+    <Link
+      key={study.slug}
+      href={`/case-studies/${study.slug}`}
+      className="group block p-6 lg:p-8 bg-card rounded-2xl border border-border/80 hover:border-primary/40 hover:-translate-y-1 transition-all duration-300"
+    >
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+        <div className="flex-1">
+          <div className="flex flex-wrap gap-2 mb-3">
+            {study.tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-xs text-primary bg-primary/10 px-3 py-1 rounded-full"
               >
-                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex flex-wrap gap-2 mb-3">
-                      {study.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="text-xs text-primary bg-primary/10 px-3 py-1 rounded-full"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300"">
-                      {study.title}
-                    </h3>
-                    <p className="text-muted-foreground">
-                      {study.summary}
-                    </p>
-                  </div>
-                  <div className="flex-shrink-0">
-                   <div className="w-11 h-11 rounded-full border border-border/80 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:scale-105 transition-all duration-300">
-                      <ArrowRight size={18} className="group-hover:text-primary-foreground transition-all duration-300" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
+                {tag}
+              </span>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* How I Think */}
+          <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+            {study.title}
+          </h3>
+
+          <p className="text-muted-foreground">
+            {study.summary}
+          </p>
+        </div>
+
+        <div className="flex-shrink-0">
+          <div className="w-11 h-11 rounded-full border border-border/80 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:scale-105 transition-all duration-300">
+            <ArrowRight
+              size={18}
+              className="group-hover:text-primary-foreground transition-all duration-300"
+            />
+          </div>
+        </div>
+      </div>
+    </Link>
+  ))}
+</div>     
+          {/* How I Think */}
       <section id="approach" className="px-6 py-16 lg:py-20">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8 animate-fade-in">
