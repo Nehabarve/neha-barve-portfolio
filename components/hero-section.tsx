@@ -29,7 +29,9 @@ export function HeroSection() {
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-12 animate-fade-up-delay-2">
             {"I'm"} Neha Barve, product professional with 5+ years of experience across enterprise platforms, workflow systems, and AI-enabled products in regulated environments.
           </p>
-
+<p className="mt-3 max-w-2xl text-base text-gray-400">
+  Focused on turning complex systems into clear, scalable product experiences.
+</p>
           <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-up-delay-3">
             <Link 
               href="#case-studies"
