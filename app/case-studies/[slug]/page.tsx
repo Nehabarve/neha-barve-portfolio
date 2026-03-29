@@ -3,69 +3,238 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import { notFound } from "next/navigation"
 
 const caseStudies = {
+  "ai-stock-scanner": {
+  title: "Building an AI-Based Stock Scanner Using Natural Language",
+  category: "AI",
+
+  overview:
+    "Worked on a side project to translate natural language queries into stock screening logic, simplifying how users interact with complex market data.",
+
+  context:
+    "Most stock scanners require users to manually build filters using technical indicators. This creates a barrier for users who understand what they want conceptually but struggle to translate that into structured queries.",
+
+  problem: [
+    "Users had to manually construct complex filter logic",
+    "Understanding technical indicators required prior knowledge",
+    "Traditional scanners were not intuitive for new users",
+    "Query building was time-consuming and error-prone"
+  ],
+
+  role:
+    "Worked on product thinking, defining user experience, and shaping how natural language inputs translate into structured scan logic.",
+
+  actions: [
+    "Defined how user intent in plain English maps to technical conditions",
+    "Worked on structuring scan logic into a consistent and reusable format",
+    "Focused on simplifying user interaction with complex financial data",
+    "Tested outputs to ensure alignment with expected scan results"
+  ],
+
+  challenges: [
+    "Translating vague natural language into precise logic was not always straightforward",
+    "Different users described the same condition in different ways",
+    "Ensuring consistency in results while maintaining flexibility in input",
+    "Balancing simplicity of use with accuracy of outputs"
+  ],
+
+  outcome: [
+    "Simplified how users interact with stock scanning tools",
+    "Reduced friction in building complex scan conditions",
+    "Improved accessibility for non-technical users",
+    "Created a foundation for scalable query interpretation"
+  ],
+
+  insight:
+    "The hardest part of building AI-driven products is not the model itself, but defining how human intent maps to structured system logic."
+},
   "global-transparency-reporting": {
-    title: "Global Transparency Reporting",
+    title: "Standardizing Global Transparency Reporting Across Multiple Countries",
     category: "Compliance",
-    overview: "Enabled scalable reporting of HCP/HCO expenses across multiple countries with varying regulatory requirements.",
-    context: "Global reporting required handling data from multiple countries with different formats and regulatory structures. Each country had unique requirements that needed to be standardized without losing critical compliance details.",
-    problem: ["Inconsistent data formats across countries", "Manual validation processes prone to errors", "High risk of compliance failures", "Not scalable for market expansion"],
-    role: "Worked with global teams and vendor to define reporting logic and ensure compliance across all markets.",
-    actions: ["Analyzed country-specific reporting formats and requirements", "Standardized data structures while maintaining compliance", "Validated outputs using real historical reports", "Created comprehensive documentation for global teams"],
-    outcome: ["Reduced manual effort by 60%", "Improved data consistency across markets", "Enabled expansion to 5 new countries"],
-    insight: "Standardizing data is more important than standardizing output."
+    overview:
+      "Supported the design of a reporting solution for HCP and HCO expense disclosure across multiple countries with varying regulatory formats and reporting expectations.",
+    context:
+      "At Takeda, transparency reporting required data from multiple countries to be prepared for country-specific disclosure formats. While the underlying expense data was similar, the way it had to be represented varied significantly by country. Some markets required different categories, structures, and levels of disclosure, which made reporting harder to scale.",
+    problem: [
+      "The same underlying data had to be represented differently depending on country requirements",
+      "Heavy manual validation was needed to confirm reports matched local formats",
+      "Inconsistent reporting outputs created risk and rework",
+      "The process was difficult to scale across additional countries"
+    ],
+    role:
+      "Worked with business stakeholders and vendor teams to understand reporting requirements, review actual output formats, and help translate those needs into clearer reporting logic.",
+    actions: [
+      "Reviewed country-specific reporting formats to understand structural differences",
+      "Helped identify where underlying data needed to be organized more consistently",
+      "Worked with stakeholders to clarify expectations around categories and reporting logic",
+      "Validated outputs against real report samples to confirm accuracy"
+    ],
+    challenges: [
+      "Different countries required different reporting structures for similar data",
+      "Manual validation was high because report formats were not uniform",
+      "The team needed standardization without losing country-specific accuracy"
+    ],
+    outcome: [
+      "Improved consistency across reporting outputs",
+      "Reduced manual validation effort",
+      "Supported a more scalable global reporting process"
+    ],
+    insight:
+      "In global reporting systems, the hardest problem is often not the output format itself. It is designing the underlying structure so one dataset can support multiple regulatory views."
   },
+
   "grants-platform": {
-    title: "Grants & Donations Platform",
+    title: "Designing a Grants, Donations & Sponsorship Workflow Platform",
     category: "Workflow",
-    overview: "Built a centralized workflow for managing grants, donations, and sponsorships with improved visibility and accountability.",
-    context: "Multiple teams were using fragmented workflows with no visibility into the overall process. This led to delays, duplicate work, and compliance risks.",
-    problem: ["No clear ownership of funding requests", "Significant delays in approval processes", "Disconnected payment workflows", "Lack of visibility into request status"],
-    role: "Led the product design and stakeholder alignment for the end-to-end workflow platform.",
-    actions: ["Mapped the complete workflow end-to-end", "Defined clear approval stages with ownership", "Integrated with SAP for payment processing", "Added real-time dashboards for visibility"],
-    outcome: ["Improved visibility across all stakeholders", "Reduced approval delays by 40%", "Streamlined payment processing"],
-    insight: "Workflow clarity drives efficiency."
+    overview:
+      "Helped design and improve a centralized workflow platform for managing grants, donations, and sponsorship requests across multiple teams.",
+    context:
+      "At Takeda, external organizations submitted requests that required coordination across medical affairs, compliance, and finance teams. The process involved multiple handoffs, approvals, and payment steps, but the workflow was not fully standardized and visibility across stages was limited.",
+    problem: [
+      "Requests moved through multiple teams with limited visibility into current status",
+      "Ownership across workflow stages was not always clear",
+      "Approval steps were inconsistent across stakeholders",
+      "Payment processing was disconnected from the request workflow"
+    ],
+    role:
+      "Supported product discovery through stakeholder interviews and journey mapping, wrote functional requirements and user stories, and worked with the scrum team through iterative delivery.",
+    actions: [
+      "Mapped the workflow from request intake through review, approval, and payment",
+      "Translated stakeholder input into structured requirements and backlog items",
+      "Helped define clearer ownership and approval stages across teams",
+      "Identified SAP integration opportunities to improve payment processing",
+      "Supported rollout, walkthroughs, and adoption tracking across business units"
+    ],
+    challenges: [
+      "Different stakeholders had different expectations of how the workflow should operate",
+      "Handoffs between teams created delays and confusion",
+      "Payment processing sat outside the main workflow and reduced end-to-end visibility"
+    ],
+    outcome: [
+      "Improved visibility into request progress and approvals",
+      "Reduced manual processing through better workflow structure",
+      "Supported SAP automation opportunities for payments",
+      "Improved adoption through training and change management"
+    ],
+    insight:
+      "Workflow design is often less about adding more functionality and more about clarifying ownership, handoffs, and decision points across teams."
   },
+
   "payment-reliability": {
-    title: "Payment Reliability System",
+    title: "Improving Payment Reliability Through Tracking and Recovery",
     category: "Payments",
-    overview: "Improved payment reliability by introducing tracking and resolution workflows that reduced failures and improved accountability.",
-    context: "Payment failures were occurring frequently with no systematic way to identify, track, or resolve them. This created significant business and compliance risks.",
-    problem: ["Payments failing before reaching SAP", "No visibility into failure reasons", "Significant delays in resolution", "No clear ownership of issues"],
-    role: "Designed the tracking system and resolution workflow to improve payment reliability.",
-    actions: ["Introduced daily failure reports with root cause analysis", "Built resolution workflow with clear ownership", "Assigned accountability for each failure type", "Created escalation paths for critical issues"],
-    outcome: ["Faster issue resolution", "Improved overall reliability by 35%", "Clear accountability structure"],
-    insight: "Visibility enables recovery."
+    overview:
+      "Improved payment reliability by introducing better visibility into failures and a structured process for resolution and recovery.",
+    context:
+      "Within the grants workflow, approved payment requests were expected to flow through a vendor-managed process and into SAP. Some requests were failing before reaching SAP, but the failures were not visible immediately, which created delays and confusion for coordinators.",
+    problem: [
+      "Payment failures were occurring before requests reached SAP",
+      "There was limited visibility into which transactions had failed",
+      "Failure reasons were not easy to identify and track",
+      "There was no structured process for correcting and resubmitting failed requests"
+    ],
+    role:
+      "Helped identify the tracking gap, worked with vendor and internal teams on a reporting approach, and supported a clearer operational process for issue resolution.",
+    actions: [
+      "Investigated where payment requests were dropping before SAP processing",
+      "Worked with the vendor to introduce daily reporting for failed requests and failure reasons",
+      "Helped define a process where support teams could review failures and notify coordinators",
+      "Supported a structured path for correcting issues and resubmitting requests"
+    ],
+    challenges: [
+      "Failures were happening but were not visible until delays were noticed",
+      "There was no single recovery workflow for failed requests",
+      "Ownership for correction and resubmission needed to be made explicit"
+    ],
+    outcome: [
+      "Improved visibility into failed payment requests",
+      "Faster issue identification and follow-up",
+      "Reduced delays caused by unresolved failures",
+      "Created a more reliable recovery process"
+    ],
+    insight:
+      "Operational issues become much easier to solve once failures are visible and ownership for recovery is clearly defined."
   },
+
   "ai-summarization": {
-    title: "AI Text Summarization",
+    title: "Introducing AI-Assisted Text Summarization",
     category: "AI",
-    overview: "Introduced AI-assisted summaries to reduce manual effort and improve efficiency in document review workflows.",
-    context: "Teams were spending significant time reviewing lengthy documents manually. This was inefficient and led to reviewer fatigue and inconsistent quality.",
-    problem: ["Time-consuming document reviews", "Low reviewer efficiency", "Inconsistent review quality", "Reviewer fatigue leading to errors"],
-    role: "Defined the AI use case and positioned the feature for user adoption and trust.",
-    actions: ["Defined clear use case with measurable outcomes", "Positioned AI as assistive rather than replacement", "Iterated on feedback from early users", "Built trust through transparency in AI decisions"],
-    outcome: ["Reduced review effort by 50%", "Improved reviewer efficiency", "High adoption rate among users"],
-    insight: "Trust drives AI adoption."
+    overview:
+      "Worked on AI-enabled enhancements that reduced manual review effort and improved efficiency in document-heavy enterprise workflows.",
+    context:
+      "At Honeywell, teams were spending significant time reviewing long records and extracting key information manually. AI-assisted summarization created an opportunity to improve efficiency, but usefulness and trust were critical for adoption.",
+    problem: [
+      "Manual review of large text-heavy records was time-consuming",
+      "Users needed faster access to key information without losing context",
+      "AI output needed to feel useful and trustworthy",
+      "Governance and traceability still had to be respected"
+    ],
+    role:
+      "Translated the opportunity into product requirements, supported prioritized epics and user stories, and worked with engineering, QA, and compliance through iterative delivery.",
+    actions: [
+      "Helped define where summarization would add value in the user workflow",
+      "Wrote requirements and acceptance criteria for the feature",
+      "Positioned the AI output as assistive rather than a replacement for user judgment",
+      "Used feedback to refine output quality and improve fit with user needs",
+      "Considered how the feature affected connected workflows and governance expectations"
+    ],
+    challenges: [
+      "Users did not initially trust AI-generated summaries",
+      "It was hard to define what a useful summary should include",
+      "The feature had to improve efficiency without creating governance concerns"
+    ],
+    outcome: [
+      "Reduced manual review effort",
+      "Improved efficiency in document-heavy workflows",
+      "Supported stronger adoption of AI-enabled functionality",
+      "Balanced user value with governance considerations"
+    ],
+    insight:
+      "AI features are most useful when they improve a real workflow and still respect trust, usability, and operational controls."
   },
+
   "config-migration-tool": {
-    title: "Config Migration Tool",
-    category: "DevTools",
-    overview: "Improved governance with structured config migration and tracking that reduced deployment risks.",
-    context: "Configuration changes were being made across environments without proper tracking or approval processes. This created risks and made it difficult to audit changes.",
-    problem: ["No change tracking across environments", "Risk of configuration inconsistencies", "Difficult to audit historical changes", "No approval workflow for critical configs"],
-    role: "Designed the migration workflow and governance structure for the development platform.",
-    actions: ["Defined structured migration workflow", "Introduced comprehensive audit logs", "Created validation checks before deployment", "Built rollback capabilities for failed migrations"],
-    outcome: ["Improved control over configurations", "Reduced deployment risk by 45%", "Clear audit trail for compliance"],
-    insight: "Governance should be built into systems."
+    title: "Enabling Governance with a Configuration Migration Tool",
+    category: "Governance",
+    overview:
+      "Supported a tool that improved how configuration changes moved across environments by adding more structure, traceability, and control.",
+    context:
+      "Internal teams were making configuration changes in lower environments and promoting them upward based on customer or business needs. Without strong visibility into what had changed and what was being moved, releases carried unnecessary risk.",
+    problem: [
+      "Configuration changes across environments were difficult to track clearly",
+      "Teams had limited visibility into what was being promoted and when",
+      "Inconsistencies across environments created operational risk",
+      "Auditability and release control needed improvement"
+    ],
+    role:
+      "Worked with internal users to understand the migration process, helped define requirements for better tracking and control, and supported the structure of the tool.",
+    actions: [
+      "Identified gaps in how changes were tracked across environments",
+      "Helped define a clearer migration workflow for moving changes upward",
+      "Supported adding visibility into what was changed and promoted",
+      "Improved traceability so teams had a more reliable release record"
+    ],
+    challenges: [
+      "Teams needed control without making releases slower",
+      "Tracking changes across environments was inconsistent",
+      "Governance and usability both had to be considered"
+    ],
+    outcome: [
+      "Better visibility into configuration changes",
+      "Improved release control across environments",
+      "Reduced risk of inconsistencies during promotion",
+      "Stronger traceability for internal users"
+    ],
+    insight:
+      "Governance works best when it is built into the workflow itself instead of being managed through manual follow-up."
   }
 }
-
 const studyOrder = [
-  "global-transparency-reporting",
-  "grants-platform",
-  "payment-reliability",
-  "ai-summarization",
-  "config-migration-tool"
+    "ai-stock-scanner",
+    "ai-summarization",
+    "config-migration-tool"
+    "grants-platform",
+    "payment-reliability",
+    "global-transparency-reporting", 
 ]
 
 export async function generateStaticParams() {
@@ -165,6 +334,22 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             </h2>
             <ul className="space-y-4">
               {study.actions.map((item, i) => (
+                <li key={i} className="flex items-start gap-4">
+                  <span className="w-6 h-6 rounded-full bg-card border border-border flex items-center justify-center text-sm text-muted-foreground flex-shrink-0">
+                    {i + 1}
+                  </span>
+                  <span className="text-lg">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+           {/* Challenges */}
+          <div>
+            <h2 className="text-sm font-medium text-muted-foreground mb-4 uppercase tracking-wide">
+              Challenges
+            </h2>
+            <ul className="space-y-4">
+              {study.challenges.map((item, i) => (
                 <li key={i} className="flex items-start gap-4">
                   <span className="w-6 h-6 rounded-full bg-card border border-border flex items-center justify-center text-sm text-muted-foreground flex-shrink-0">
                     {i + 1}
