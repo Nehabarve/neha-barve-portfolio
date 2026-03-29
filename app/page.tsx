@@ -2,22 +2,23 @@ import Link from "next/link"
 import { ArrowRight, Mail, Linkedin, Briefcase, Shield, BarChart3, Cpu, Lightbulb, Users, Scale, UserCheck, Puzzle, ListChecks } from "lucide-react"
 
 const credibilityCards = [
-  {
-    icon: Briefcase,
-    title: "Enterprise Platforms",
-    text: "Built products for complex operational workflows",
+
+    {
+    icon: Workflow,
+    title: "Workflow Systems",
+    text: "Designing and improving systems that support real operational work",
   },
-  {
+   {
     icon: Shield,
-    title: "Regulated Environments",
-    text: "Experience across governance, privacy, and compliance",
+    title: "Compliance & Governance",
+    text: "Building products that work within regulated environments",
   },
-  {
-    icon: BarChart3,
-    title: "Agile Delivery",
-    text: "Backlog management, user stories, and iterative releases",
+
+    icon: Briefcase,
+    title: "Execution & Agile Delivery",
+    text: "Turning requirements into shipped features through structured delivery",
   },
-  {
+   {
     icon: Cpu,
     title: "AI-Enabled Products",
     text: "Worked on AI-assisted enhancements to improve efficiency",
@@ -114,8 +115,7 @@ export default function Home() {
               Product Manager | AI-Enabled Enterprise Products | Agile Delivery & Compliance
             </p>
             <h1 className="text-4xl lg:text-5xl font-semibold leading-tight tracking-tight mb-6">
-              I build enterprise products that simplify complex workflows.
-            </h1>
+            Product Manager focused on enterprise workflows, platforms, and AI-driven product improvements</h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
