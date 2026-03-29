@@ -1,0 +1,323 @@
+import Link from "next/link"
+import { ArrowRight, Mail, Linkedin, Briefcase, Shield, BarChart3, Cpu, Lightbulb, Users, Scale, UserCheck, Puzzle, ListChecks } from "lucide-react"
+
+const credibilityCards = [
+  {
+    icon: Briefcase,
+    title: "Enterprise Platforms",
+    text: "Built products for complex operational workflows",
+  },
+  {
+    icon: Shield,
+    title: "Regulated Environments",
+    text: "Experience across governance, privacy, and compliance",
+  },
+  {
+    icon: BarChart3,
+    title: "Agile Delivery",
+    text: "Backlog management, user stories, and iterative releases",
+  },
+  {
+    icon: Cpu,
+    title: "AI-Enabled Products",
+    text: "Worked on AI-assisted enhancements to improve efficiency",
+  },
+]
+
+const caseStudies = [
+  {
+    slug: "global-transparency-reporting",
+    title: "Standardizing Global Transparency Reporting Across Countries",
+    summary: "Supported complex reporting across regions by bringing more structure to data, formats, and reporting logic.",
+    tags: ["Compliance", "Reporting", "Global"],
+  },
+  {
+    slug: "grants-workflow-platform",
+    title: "Designing a Grants, Donations & Sponsorship Workflow Platform",
+    summary: "Helped structure and improve a multi-team workflow spanning request intake, approvals, and payment processing.",
+    tags: ["Workflow", "SAP", "Stakeholders"],
+  },
+  {
+    slug: "ai-text-summarization",
+    title: "Introducing AI-Assisted Text Summarization",
+    summary: "Worked on AI-enabled enhancements to reduce manual review effort and improve usability.",
+    tags: ["AI", "Enterprise", "Efficiency"],
+  },
+]
+
+const howIThink = [
+  {
+    icon: Lightbulb,
+    title: "Prioritization",
+    principle: "I prioritize based on long-term impact, not just visibility.",
+    example: "In grants workflow work, identifying SAP payment integration opportunities created stronger operational value than focusing only on front-end improvements.",
+  },
+  {
+    icon: Users,
+    title: "Collaboration",
+    principle: "Good product work comes from shared understanding across teams.",
+    example: "I partnered with engineering, QA, compliance, and business stakeholders to translate requirements into clear deliverables and compliant releases.",
+  },
+  {
+    icon: Scale,
+    title: "Conflict Resolution",
+    principle: "Most conflicts are trade-offs that need structure.",
+    example: "In cross-functional workflow projects, I balanced process efficiency with governance and approval controls instead of choosing one side over the other.",
+  },
+  {
+    icon: UserCheck,
+    title: "Stakeholder Management",
+    principle: "Alignment early reduces rework later.",
+    example: "I worked across medical affairs, compliance, and finance stakeholders to turn user research and journey mapping into actionable platform improvements.",
+  },
+  {
+    icon: Puzzle,
+    title: "Problem Solving",
+    principle: "Visibility usually comes before improvement.",
+    example: "I built dashboards for cycle time, adoption, and quality targets so teams could identify where to iterate next.",
+  },
+  {
+    icon: ListChecks,
+    title: "Agile Execution",
+    principle: "Clear backlog and clear stories lead to better delivery.",
+    example: "I wrote epics, user stories, and acceptance criteria so scrum teams could work through iterative delivery with less ambiguity.",
+  },
+]
+
+const additionalWork = [
+  {
+    title: "Configuration Migration Tool",
+    summary: "Supported a tool that helped internal users promote configuration changes across environments with better traceability and control.",
+  },
+  {
+    title: "Cycle Time Metrics",
+    summary: "Built dashboards and metrics to track workflow efficiency, adoption, and quality targets.",
+  },
+  {
+    title: "Credentialing Platform from Scratch",
+    summary: "At Edu-Cred, helped build a platform from scratch for licensed professionals by gathering requirements, creating wireframes, and testing across releases.",
+  },
+  {
+    title: "HR Workflow Improvements",
+    summary: "At Bridgestone, worked on process improvement across HR workflows including employee lifecycle management and coordination.",
+  },
+]
+
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="px-6 py-20 lg:py-28">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl animate-fade-in">
+            <p className="text-primary text-sm font-medium mb-4 tracking-wide">
+              Senior Product Associate | AI-Enabled Enterprise Products | Agile Delivery & Compliance
+            </p>
+            <h1 className="text-4xl lg:text-5xl font-semibold leading-tight tracking-tight mb-6">
+              I build enterprise products that simplify complex workflows.
+            </h1>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+              I work across enterprise platforms, workflow systems, reporting tools, governance, and AI-enabled product enhancements in regulated environments.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              Product professional with 5+ years of experience building and improving enterprise platforms in regulated environments. I have worked across the product development life cycle, from discovery and requirements through delivery and post-launch optimization. My experience includes backlog management, epics and user stories, AI-enabled enhancements, governance, privacy, compliance, and cross-functional delivery.
+            </p>
+            <div className="flex flex-wrap gap-4 mb-16">
+              <Link
+                href="#work"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity"
+              >
+                View My Work
+                <ArrowRight size={18} />
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg font-medium hover:bg-card transition-colors"
+              >
+                Contact Me
+              </Link>
+            </div>
+          </div>
+
+          {/* Credibility Cards */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 animate-fade-in delay-1">
+            {credibilityCards.map((card) => (
+              <div
+                key={card.title}
+                className="p-6 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors"
+              >
+                <card.icon className="w-8 h-8 text-primary mb-4" />
+                <h3 className="font-semibold mb-2">{card.title}</h3>
+                <p className="text-sm text-muted-foreground">{card.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Case Studies */}
+      <section id="work" className="px-6 py-20 lg:py-28 bg-card/50">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12 animate-fade-in">
+            <p className="text-primary text-sm font-medium mb-2">Selected Work</p>
+            <h2 className="text-3xl lg:text-4xl font-semibold mb-4">Featured Case Studies</h2>
+            <p className="text-muted-foreground max-w-2xl">
+              A selection of product work across reporting, workflow automation, AI-enabled enhancements, and governance.
+            </p>
+          </div>
+
+          <div className="grid gap-6 animate-fade-in delay-1">
+            {caseStudies.map((study) => (
+              <Link
+                key={study.slug}
+                href={`/case-studies/${study.slug}`}
+                className="group block p-6 lg:p-8 bg-card rounded-xl border border-border hover:border-primary/30 transition-all"
+              >
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      {study.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-xs text-primary bg-primary/10 px-3 py-1 rounded-full"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                      {study.title}
+                    </h3>
+                    <p className="text-muted-foreground">
+                      {study.summary}
+                    </p>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors">
+                      <ArrowRight size={18} className="group-hover:text-primary-foreground transition-colors" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How I Think */}
+      <section id="approach" className="px-6 py-20 lg:py-28">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12 animate-fade-in">
+            <p className="text-primary text-sm font-medium mb-2">My Approach</p>
+            <h2 className="text-3xl lg:text-4xl font-semibold">How I Think</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in delay-1">
+            {howIThink.map((item) => (
+              <div
+                key={item.title}
+                className="p-6 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors"
+              >
+                <item.icon className="w-8 h-8 text-primary mb-4" />
+                <h3 className="font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm text-foreground mb-3">{item.principle}</p>
+                <p className="text-sm text-muted-foreground">{item.example}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Work */}
+      <section className="px-6 py-20 lg:py-28 bg-card/50">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12 animate-fade-in">
+            <p className="text-primary text-sm font-medium mb-2">More Projects</p>
+            <h2 className="text-3xl lg:text-4xl font-semibold">Additional Work</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8 animate-fade-in delay-1">
+            {additionalWork.map((work) => (
+              <div
+                key={work.title}
+                className="p-6 bg-card rounded-xl border border-border"
+              >
+                <h3 className="font-semibold mb-2">{work.title}</h3>
+                <p className="text-sm text-muted-foreground">{work.summary}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="animate-fade-in delay-2">
+            <Link
+              href="/additional-work"
+              className="inline-flex items-center gap-2 text-primary hover:underline underline-offset-4"
+            >
+              View More
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* About Preview */}
+      <section className="px-6 py-20 lg:py-28">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl animate-fade-in">
+            <p className="text-primary text-sm font-medium mb-2">Background</p>
+            <h2 className="text-3xl lg:text-4xl font-semibold mb-6">About</h2>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              I am a product professional with experience building and improving enterprise platforms in regulated environments. My work spans discovery, journey mapping, requirements, backlog management, Agile delivery, governance, AI-enabled product enhancements, and post-launch optimization. I enjoy turning complex business needs into clear product decisions and practical systems that improve the end-user experience.
+            </p>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg font-medium hover:bg-card transition-colors"
+            >
+              Read More
+              <ArrowRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Preview */}
+      <section className="px-6 py-20 lg:py-28 bg-card/50">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl animate-fade-in">
+            <p className="text-primary text-sm font-medium mb-2">Get in Touch</p>
+            <h2 className="text-3xl lg:text-4xl font-semibold mb-6">Contact</h2>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              {"I'm open to product, product operations, business analysis, and enterprise platform opportunities."}
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="mailto:neha.barve@email.com"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity"
+              >
+                <Mail size={18} />
+                Email
+              </a>
+              <a
+                href="https://linkedin.com/in/nehabarve"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg font-medium hover:bg-card transition-colors"
+              >
+                <Linkedin size={18} />
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="px-6 py-8 border-t border-border">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-muted-foreground">Neha Barve</p>
+          <p className="text-sm text-muted-foreground">Built with care</p>
+        </div>
+      </footer>
+    </main>
+  )
+}
