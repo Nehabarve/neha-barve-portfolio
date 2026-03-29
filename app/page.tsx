@@ -138,7 +138,7 @@ export default function Home() {
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity"
               >
                 View My Work
-                <ArrowRight size={18} />
+             <ArrowRight size={18} className="group-hover:text-primary-foreground transition-all duration-300" />
               </Link>
               <Link
                 href="/contact"
@@ -179,7 +179,7 @@ export default function Home() {
               <Link
                 key={study.slug}
                 href={`/case-studies/${study.slug}`}
-                className="group block p-6 lg:p-8 bg-card rounded-2xl border border-border/80 hover:border-primary/40 hover:-translate-y-1 transition-all duration-300"
+               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
               >
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                   <div className="flex-1">
