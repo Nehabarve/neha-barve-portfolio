@@ -13,7 +13,6 @@ import {
   Puzzle,
   ListChecks,
   GitBranch,
-  BarChart3,
 } from "lucide-react"
 
 const credibilityCards = [
@@ -141,11 +140,11 @@ const additionalWork = [
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="px-6 py-16 lg:py-20">
-<div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-  <div className="animate-fade-in">          
-  <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] text-white mb-4">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-3xl animate-fade-in">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] text-white mb-4">
               Hi, I&apos;m Neha Barve
             </h1>
 
@@ -161,14 +160,8 @@ export default function Home() {
               stories, AI-enabled enhancements, governance, privacy, compliance, and
               cross-functional delivery.
             </p>
-            <div className="flex justify-center lg:justify-end">
-              <img
-                src="/profile.jpg"
-                alt="Neha Barve"
-                className="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-2xl border border-border"
-              />
-            </div>
-            <div className="flex flex-wrap gap-4 mb-12">
+
+            <div className="flex flex-wrap gap-4">
               <Link
                 href="#work"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity"
@@ -186,21 +179,32 @@ export default function Home() {
             </div>
           </div>
 
-<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-10"">     
-  {credibilityCards.map((card) => (
+          <div className="flex justify-center lg:justify-end animate-fade-in delay-1">
+            <img
+              src="/profile.jpg"
+              alt="Neha Barve"
+              className="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-2xl border border-border"
+            />
+          </div>
+        </div>
+
+        <div className="max-w-6xl mx-auto mt-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 animate-fade-in delay-1">
+            {credibilityCards.map((card) => (
               <div
                 key={card.title}
-                className="p-4 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors">
+                className="p-4 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors"
+              >
                 <card.icon className="w-6 h-6 text-primary mb-3" />
-               <h3 className="text-sm font-semibold mb-1">{card.title}</h3>
-                <p className="text-sm text-muted-foreground">{card.text}</p>
+                <h3 className="text-sm font-semibold mb-1">{card.title}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{card.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Featured Case Studies */}
+      {/* Case Studies */}
       <section id="work" className="px-6 py-16 lg:py-20 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8 animate-fade-in">
@@ -309,18 +313,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Preview */}
+      {/* About */}
       <section className="px-6 py-16 lg:py-20">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">Background</p>
             <h2 className="text-3xl lg:text-4xl font-semibold mb-6">About</h2>
-        <p className="text-muted-foreground leading-relaxed mb-8">
-          I’ve spent my career working on enterprise platforms in regulated environments where workflows, compliance, and data accuracy are critical. 
-          I partner closely with engineering, compliance, and business teams to turn complex requirements into practical systems. 
-          My focus is on simplifying workflows, improving visibility, and building products that teams actually use in their day-to-day work.
-        </p>
-                    <Link
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              I&apos;ve spent my career working on enterprise platforms in regulated environments
+              where workflows, compliance, and data accuracy are critical. I partner closely with
+              engineering, compliance, and business teams to turn complex requirements into
+              practical systems. My focus is on simplifying workflows, improving visibility, and
+              building products that teams actually use in their day-to-day work.
+            </p>
+            <Link
               href="/about"
               className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg font-medium hover:bg-card transition-colors"
             >
@@ -331,15 +337,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Preview */}
+      {/* Contact */}
       <section className="px-6 py-16 lg:py-20 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">Get in Touch</p>
             <h2 className="text-3xl lg:text-4xl font-semibold mb-6">Contact</h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              {"I'm open to product, product operations, business analysis, and enterprise platform opportunities."}
+              I&apos;m open to product, product operations, business analysis, and enterprise
+              platform opportunities.
             </p>
+
             <div className="flex flex-wrap gap-4">
               <a
                 href="mailto:BarveNeha05@gmail.com"
@@ -348,8 +356,9 @@ export default function Home() {
                 <Mail size={18} />
                 Email
               </a>
+
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/neha-barve/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg font-medium hover:bg-card transition-colors"
