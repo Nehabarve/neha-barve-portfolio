@@ -231,7 +231,7 @@ const caseStudies = {
 const studyOrder = [
     "ai-stock-scanner",
     "ai-summarization",
-    "config-migration-tool"
+    "config-migration-tool",
     "grants-platform",
     "payment-reliability",
     "global-transparency-reporting", 
