@@ -115,7 +115,7 @@ export default function Home() {
             </p>
           <h1 className="text-3xl sm:text-5xl md:text-5xl font-semibold tracking-tight leading-[1.1] text-white">
             Hi I am  Neha Barve </h1>
-            <p className="text-primary text-sm font-medium mb-4 tracking-wide">
+            <p className="text-muted-foreground leading-relaxed mb-5>
             Product Manager focused on enterprise workflows, platforms, and AI-driven product improvements</p>
            
             <p className="text-muted-foreground leading-relaxed mb-8">
