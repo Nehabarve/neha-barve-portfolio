@@ -25,24 +25,32 @@ const credibilityCards =[
 ]
 
 const caseStudies = [
-  {
-    slug: "global-transparency-reporting",
-    title: "Standardizing Global Transparency Reporting Across Countries",
-    summary: "Standardized reporting across multiple countries with different regulatory formats, improving consistency and reducing manual effort.",
-    tags: ["Compliance", "Reporting", "Global"],
-  },
-  {
-    slug: "grants-workflow-platform",
-    title: "Designing a Grants, Donations & Sponsorship Workflow Platform",
-    summary: "Designed and improved a multi-team workflow covering request intake, approvals, and SAP payment integration, improving visibility and reducing processing delays.",
-    tags: ["Workflow", "SAP", "Stakeholders"],
-  },
-  {
+    {
+    slug: "ai-stock-scanner",
+    title: "Building an AI-Based Stock Scanner Using Natural Language",
+    summary:"Built a side project with a small team to translate natural language queries into stock screening logic, simplifying how users interact with market data.",
+    tags: ["AI", "Side Project", "Product Thinking"],
+    },
+    {
     slug: "ai-text-summarization",
     title: "Introducing AI-Assisted Text Summarization",
     summary: "Introduced AI-based text summarization to reduce manual review effort and improve efficiency in document-heavy workflows.",
     tags: ["AI", "Enterprise", "Efficiency"],
-  },
+    },
+ 
+    {
+    slug: "grants-workflow-platform",
+    title: "Designing a Grants, Donations & Sponsorship Workflow Platform",
+    summary: "Designed and improved a multi-team workflow covering request intake, approvals, and SAP payment integration, improving visibility and reducing processing delays.",
+    tags: ["Workflow", "SAP", "Stakeholders"],
+    },
+   {
+    slug: "global-transparency-reporting",
+    title: "Standardizing Global Transparency Reporting Across Countries",
+    summary: "Standardized reporting across multiple countries with different regulatory formats, improving consistency and reducing manual effort.",
+    tags: ["Compliance", "Reporting", "Global"],
+    },
+
 ]
 
 const howIThink = [
@@ -87,21 +95,25 @@ const howIThink = [
 const additionalWork = [
   {
     title: "Configuration Migration Tool",
-    summary: "Supported a tool that helped internal users promote configuration changes across environments with better traceability and control.",
+    summary:
+      "Improved how configuration changes were promoted across environments by introducing structure and traceability, reducing risk during releases.",
   },
   {
-    title: "Cycle Time Metrics",
-    summary: "Built dashboards and metrics to track workflow efficiency, adoption, and quality targets.",
+    title: "Cycle Time Metrics & Dashboards",
+    summary:
+      "Defined and tracked cycle time, adoption, and quality metrics, enabling teams to identify bottlenecks and improve workflow efficiency.",
   },
   {
-    title: "Credentialing Platform from Scratch",
-    summary: "At Edu-Cred, helped build a platform from scratch for licensed professionals by gathering requirements, creating wireframes, and testing across releases.",
+    title: "Credentialing Platform for Licensed Professionals",
+    summary:
+      "Contributed to building a platform for managing license renewal and compliance by gathering requirements, designing workflows, and supporting testing across releases.",
   },
   {
-    title: "HR Workflow Improvements",
-    summary: "At Bridgestone, worked on process improvement across HR workflows including employee lifecycle management and coordination.",
+    title: "Training & HR Workflow Improvements",
+    summary:
+      "Improved training and HR workflows by bringing structure to employee lifecycle and coordination processes in the absence of a centralized HR system.",
   },
-]
+];
 
 export default function Home() {
   return (
