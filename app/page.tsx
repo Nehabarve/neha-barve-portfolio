@@ -1,27 +1,26 @@
 import Link from "next/link"
 import { ArrowRight, Mail, Linkedin, Briefcase, Shield, BarChart3, Cpu, Lightbulb, Users, Scale, UserCheck, Puzzle, ListChecks } from "lucide-react"
 
-const credibilityCards = [
-
-    {
+const credibilityCards =[
+  {
     icon: Workflow,
     title: "Workflow Systems",
-    text: "Designing and improving systems that support real operational work",
+    text: "Designing systems that support real operational processes end to end",
   },
-   {
+  {
     icon: Shield,
     title: "Compliance & Governance",
-    text: "Building products that work within regulated environments",
+    text: "Building products that align with regulatory, privacy, and approval requirements",
   },
-    {
+  {
     icon: Briefcase,
-    title: "Execution & Agile Delivery",
-    text: "Turning requirements into shipped features through structured delivery",
+    title: "Execution & Delivery",
+    text: "Translating requirements into clear backlog, user stories, and shipped features",
   },
-   {
+  {
     icon: Cpu,
-    title: "AI-Enabled Products",
-    text: "Worked on AI-assisted enhancements to improve efficiency",
+    title: "AI in Products",
+    text: "Applying AI where it improves user workflows and reduces manual effort",
   }
 ]
 
