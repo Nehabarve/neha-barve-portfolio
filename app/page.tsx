@@ -208,10 +208,10 @@ export default function Home() {
       <section id="work" className="px-6 py-16 lg:py-20 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8 animate-fade-in">
-            <p className="text-primary text-sm font-medium mb-2">Case Studies</p>
-            <h2 className="text-3xl lg:text-4xl font-semibold mb-4">
+            <h2 className="text-primary text-sm font-medium mb-2">Case Studies</h2>
+            <p className="text-3xl lg:text-4xl font-semibold mb-4">
               Building & Improving Enterprise Products
-            </h2>
+            </p>
             <p className="text-muted-foreground max-w-2xl">
               Product work focused on solving real operational problems across enterprise platforms
               and regulated environments.
