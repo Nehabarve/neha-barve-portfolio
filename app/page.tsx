@@ -193,7 +193,7 @@ export default function Home() {
             {credibilityCards.map((card) => (
               <div
                 key={card.title}
-                className="p-4 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors"
+                className="p-4 bg-card/6- rounded-2xl border border-border hover:border-primary/30 transition-colors"
               >
                 <card.icon className="w-6 h-6 text-primary mb-3" />
                 <h3 className="text-sm font-semibold mb-1">{card.title}</h3>
