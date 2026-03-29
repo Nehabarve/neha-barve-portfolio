@@ -13,7 +13,7 @@ const credibilityCards = [
     title: "Compliance & Governance",
     text: "Building products that work within regulated environments",
   },
-
+    {
     icon: Briefcase,
     title: "Execution & Agile Delivery",
     text: "Turning requirements into shipped features through structured delivery",
