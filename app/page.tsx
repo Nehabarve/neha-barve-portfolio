@@ -152,15 +152,13 @@ export default function Home() {
               Product Manager | AI-Enabled Enterprise Products | Agile Delivery & Compliance
             </p>
 
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              I am a Product Manager with 5+ years of experience focused on enterprise workflows,
-              platforms, and AI-driven product improvements. I have worked across the product
-              development life cycle, from discovery and requirements through delivery and
-              post-launch optimization. My experience includes backlog management, epics and user
-              stories, AI-enabled enhancements, governance, privacy, compliance, and
-              cross-functional delivery.
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Product Manager with 5+ years of experience in enterprise workflows, platforms, and AI-driven improvements.
             </p>
-
+            
+            <p className="text-muted-foreground/80 leading-relaxed">
+              Focused on simplifying complex systems and building products that teams actually use.
+            </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="#work"
@@ -180,11 +178,15 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center lg:justify-end animate-fade-in delay-1">
-            <img
-              src="/profile.jpg"
-              alt="Neha Barve"
-              className="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-2xl border border-border"
-            />
+          <div className="relative">
+  <div className="absolute -inset-4 bg-primary/20 blur-2xl rounded-2xl opacity-40"></div>
+
+  <img
+    src="/profile.jpg"
+    alt="Neha Barve"
+    className="relative w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-2xl border border-border"
+  />
+</div>
           </div>
         </div>
 
@@ -205,7 +207,7 @@ export default function Home() {
       </section>
 
       {/* Case Studies */}
-      <section id="work" className="px-6 py-16 lg:py-20 bg-card/50">
+      <section id="work" className="px-6 py-16 lg:py-20 bg-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8 animate-fade-in">
             <h2 className="text-primary text-sm font-medium mb-2">Case Studies</h2>
@@ -285,8 +287,8 @@ export default function Home() {
       </section>
 
       {/* Additional Work */}
-      <section className="px-6 py-16 lg:py-20 bg-card/50">
-        <div className="max-w-6xl mx-auto">
+<section className="px-6 py-16 lg:py-20 bg-white/5">       
+  <div className="max-w-6xl mx-auto">
           <div className="mb-8 animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">More Projects</p>
             <h2 className="text-3xl lg:text-4xl font-semibold">Additional Work</h2>
@@ -338,7 +340,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section className="px-6 py-16 lg:py-20 bg-card/50">
+      <section className="px-6 py-16 lg:py-20 bg-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">Get in Touch</p>
