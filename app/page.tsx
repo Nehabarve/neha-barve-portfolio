@@ -114,12 +114,11 @@ export default function Home() {
               Product Manager | AI-Enabled Enterprise Products | Agile Delivery & Compliance
             </p>
           <h1 className="text-3xl sm:text-5xl md:text-5xl font-semibold tracking-tight leading-[1.1] text-white">
-            Hi I am  Neha Barve </h1>
-            <p className="text-muted-foreground leading-relaxed mb-5>
-            Product Manager focused on enterprise workflows, platforms, and AI-driven product improvements</p>
-           
+            Hi, I'm  Neha Barve - Product Manager </h1>
+      
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Product professional with 5+ years of experience building and improving enterprise platforms in regulated environments. I have worked across the product development life cycle, from discovery and requirements through delivery and post-launch optimization. My experience includes backlog management, epics and user stories, AI-enabled enhancements, governance, privacy, compliance, and cross-functional delivery.
+            I am Product Manager with 5+ years of experience focused on enterprise workflows, platforms, and AI-driven product improvements.
+            I have worked across the product development life cycle, from discovery and requirements through delivery and post-launch optimization. My experience includes backlog management, epics and user stories, AI-enabled enhancements, governance, privacy, compliance, and cross-functional delivery.
             </p>
             <div className="flex flex-wrap gap-4 mb-16">
               <Link
