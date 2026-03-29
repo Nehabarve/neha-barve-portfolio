@@ -113,8 +113,8 @@ export default function Home() {
             <p className="text-primary text-sm font-medium mb-4 tracking-wide">
               Product Manager | AI-Enabled Enterprise Products | Agile Delivery & Compliance
             </p>
-          <h3 className="text-4xl lg:text-5xl font-semibold leading-tight tracking-tight mb-6">
-            Product Manager focused on enterprise workflows, platforms, and AI-driven product improvements</h3>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.1] text-white">
+            Product Manager focused on enterprise workflows, platforms, and AI-driven product improvements</h1>
            
             <p className="text-muted-foreground leading-relaxed mb-8">
               Product professional with 5+ years of experience building and improving enterprise platforms in regulated environments. I have worked across the product development life cycle, from discovery and requirements through delivery and post-launch optimization. My experience includes backlog management, epics and user stories, AI-enabled enhancements, governance, privacy, compliance, and cross-functional delivery.
