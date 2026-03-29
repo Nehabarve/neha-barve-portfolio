@@ -110,12 +110,12 @@ export default function Home() {
       <section className="px-6 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl animate-fade-in">
-            <p className="text-primary text-sm font-medium mb-4 tracking-wide">
+           
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1] text-white">
+            Hi, I'm Neha Barve </h1>
+       <p className="text-primary text-sm font-medium mb-4 tracking-wide">
               Product Manager | AI-Enabled Enterprise Products | Agile Delivery & Compliance
             </p>
-          <h1 className="text-3xl sm:text-5xl md:text-5xl font-semibold tracking-tight leading-[1.1] text-white">
-            Hi, I'm  Neha Barve - Product Manager </h1>
-      
             <p className="text-muted-foreground leading-relaxed mb-8">
             I am Product Manager with 5+ years of experience focused on enterprise workflows, platforms, and AI-driven product improvements.
             I have worked across the product development life cycle, from discovery and requirements through delivery and post-launch optimization. My experience includes backlog management, epics and user stories, AI-enabled enhancements, governance, privacy, compliance, and cross-functional delivery.
@@ -157,11 +157,9 @@ export default function Home() {
       <section id="work" className="px-6 py-20 lg:py-28 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 animate-fade-in">
-            <p className="text-primary text-sm font-medium mb-2">Selected Work</p>
-            <h2 className="text-3xl lg:text-4xl font-semibold mb-4">Featured Case Studies</h2>
-            <p className="text-muted-foreground max-w-2xl">
-              A selection of product work across reporting, workflow automation, AI-enabled enhancements, and governance.
-            </p>
+         <p className="text-primary text-sm font-medium mb-2">Case Studies</p>  
+          <h2 className="text-3xl lg:text-4xl font-semibold mb-4"> Building & Improving Enterprise Products</h2>
+          <p className="text-muted-foreground max-w-2xl"> Product work focused on solving real operational problems across enterprise platforms and regulated environments.</p>
           </div>
 
           <div className="grid gap-6 animate-fade-in delay-1">
