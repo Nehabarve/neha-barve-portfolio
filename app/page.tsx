@@ -111,13 +111,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl animate-fade-in">
             <p className="text-primary text-sm font-medium mb-4 tracking-wide">
-              Senior Product Associate | AI-Enabled Enterprise Products | Agile Delivery & Compliance
+              Product Manager | AI-Enabled Enterprise Products | Agile Delivery & Compliance
             </p>
             <h1 className="text-4xl lg:text-5xl font-semibold leading-tight tracking-tight mb-6">
               I build enterprise products that simplify complex workflows.
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              I work across enterprise platforms, workflow systems, reporting tools, governance, and AI-enabled product enhancements in regulated environments.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Product professional with 5+ years of experience building and improving enterprise platforms in regulated environments. I have worked across the product development life cycle, from discovery and requirements through delivery and post-launch optimization. My experience includes backlog management, epics and user stories, AI-enabled enhancements, governance, privacy, compliance, and cross-functional delivery.
