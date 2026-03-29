@@ -54,7 +54,7 @@ const caseStudies = [
     tags: ["AI", "Enterprise", "Efficiency"],
   },
   {
-    slug: "grants-workflow-platform",
+    slug: "grants-platform",
     title: "Designing a Grants, Donations & Sponsorship Workflow Platform",
     summary:
       "Designed and improved a multi-team workflow covering request intake, approvals, and SAP payment integration, improving visibility and reducing processing delays.",
