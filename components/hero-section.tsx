@@ -17,7 +17,7 @@ export function HeroSection() {
           <div className="animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8">
               <Sparkles size={14} className="text-accent" />
-              <span className="text-sm text-muted-foreground">Product Manager</span>
+              <span className="text-sm text-muted-foreground">Product  Manager</span>
             </div>
           </div>
 
