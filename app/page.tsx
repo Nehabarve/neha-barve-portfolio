@@ -278,7 +278,7 @@ export default function Home() {
             {howIThink.map((item, index) => (
               <details
                 key={item.title}
-                className="group p-6 bg-card/70 rounded-2xl border border-border/60 backdrop-blur-sm hover:border-primary/30 transition-colors"
+                className="group p-5 bg-card/70 rounded-2xl border border-border/60 backdrop-blur-sm hover:border-primary/30 transition-colors"
                 open={index === 0}
               >
                 <summary className="list-none cursor-pointer">
@@ -288,9 +288,8 @@ export default function Home() {
                   <p className="text-xs text-primary group-open:hidden">Click to expand</p>
                 </summary>
 
-                <div className="pt-4 mt-4 border-t border-border/50">
-                  <p className="text-sm font-medium text-primary mb-2">Example</p>
-                  <p className="text-sm text-muted-foreground mb-4">{item.example}</p>
+                  <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+                  <span className="text-primary font-medium">Example:</span> {item.example}</p>
 
                   {item.takeaway && (
                     <>
