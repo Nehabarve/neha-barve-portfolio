@@ -262,30 +262,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How I Think */}
+           {/* How I Think */}
       <section id="approach" className="px-6 py-16 lg:py-20">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8 animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">My Approach</p>
-            <h2 className="text-3xl lg:text-4xl font-semibold">How I Think</h2>
+            <h2 className="text-3xl lg:text-4xl font-semibold mb-4">How I Think</h2>
+            <p className="text-muted-foreground max-w-2xl">
+              Product principles shaped by real work across enterprise workflows,
+              compliance-heavy systems, and AI-enabled improvements.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in delay-1">
-            {howIThink.map((item) => (
-              <div
+            {howIThink.map((item, index) => (
+              <details
                 key={item.title}
-                className="p-6 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors"
+                className="group p-6 bg-card/70 rounded-2xl border border-border/60 backdrop-blur-sm hover:border-primary/30 transition-colors"
+                open={index === 0}
               >
-                <item.icon className="w-8 h-8 text-primary mb-4" />
-                <h3 className="font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-foreground mb-3">{item.principle}</p>
-                <p className="text-sm text-muted-foreground">{item.example}</p>
-              </div>
+                <summary className="list-none cursor-pointer">
+                  <item.icon className="w-8 h-8 text-primary mb-4" />
+                  <h3 className="font-semibold mb-2">{item.title}</h3>
+                  <p className="text-sm text-foreground mb-3">{item.principle}</p>
+                  <p className="text-xs text-primary group-open:hidden">Click to expand</p>
+                </summary>
+
+                <div className="pt-4 mt-4 border-t border-border/50">
+                  <p className="text-sm font-medium text-primary mb-2">Example</p>
+                  <p className="text-sm text-muted-foreground mb-4">{item.example}</p>
+
+                  {item.takeaway && (
+                    <>
+                      <p className="text-sm font-medium text-primary mb-2">Takeaway</p>
+                      <p className="text-sm text-muted-foreground">{item.takeaway}</p>
+                    </>
+                  )}
+                </div>
+              </details>
             ))}
           </div>
         </div>
       </section>
-
       {/* Additional Work */}
 <section className="px-6 py-16 lg:py-20 bg-white/5">       
   <div className="max-w-6xl mx-auto">
