@@ -168,7 +168,7 @@ export default function Home() {
       {/* Featured Case Studies */}
       <section id="work" className="px-6 py-16 lg:py-20 bg-card/50">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12 animate-fade-in">
+          <div className="mb-8 animate-fade-in">
          <p className="text-primary text-sm font-medium mb-2">Case Studies</p>  
           <h2 className="text-3xl lg:text-4xl font-semibold mb-4"> Building & Improving Enterprise Products</h2>
           <p className="text-muted-foreground max-w-2xl"> Product work focused on solving real operational problems across enterprise platforms and regulated environments.</p>
@@ -215,7 +215,7 @@ export default function Home() {
       {/* How I Think */}
       <section id="approach" className="px-6 py-16 lg:py-20">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12 animate-fade-in">
+          <div className="mb-8 animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">My Approach</p>
             <h2 className="text-3xl lg:text-4xl font-semibold">How I Think</h2>
           </div>
@@ -239,7 +239,7 @@ export default function Home() {
       {/* Additional Work */}
       <section className="px-6 py-16 lg:py-20 bg-card/50">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12 animate-fade-in">
+          <div className="mb-8 animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">More Projects</p>
             <h2 className="text-3xl lg:text-4xl font-semibold">Additional Work</h2>
           </div>
