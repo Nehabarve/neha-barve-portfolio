@@ -22,7 +22,7 @@ const credibilityCards = [
     icon: Cpu,
     title: "AI-Enabled Products",
     text: "Worked on AI-assisted enhancements to improve efficiency",
-  },
+  }
 ]
 
 const caseStudies = [
