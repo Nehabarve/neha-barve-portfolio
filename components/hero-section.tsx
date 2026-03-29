@@ -17,7 +17,7 @@ export function HeroSection() {
           <div className="animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8">
               <Sparkles size={14} className="text-accent" />
-              <span className="text-sm text-muted-foreground">Senior Product Manager</span>
+              <span className="text-sm text-muted-foreground">Product Manager</span>
             </div>
           </div>
 
@@ -27,9 +27,7 @@ export function HeroSection() {
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-12 animate-fade-up-delay-2">
-            {"I'm"} Neha Barve, a product leader focused on solving complex problems through 
-            user-centered design and data-driven decisions. I lead cross-functional teams 
-            to deliver impactful solutions at scale.
+            {"I'm"} Neha Barve, product professional with 5+ years of experience across enterprise platforms, workflow systems, and AI-enabled products in regulated environments.
           </p>
 
           <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-up-delay-3">
