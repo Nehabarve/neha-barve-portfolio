@@ -113,7 +113,7 @@ export default function Home() {
             <p className="text-primary text-sm font-medium mb-4 tracking-wide">
               Product Manager | AI-Enabled Enterprise Products | Agile Delivery & Compliance
             </p>
-          <h3> className="text-4xl lg:text-5xl font-semibold leading-tight tracking-tight mb-6">
+          <h3 className="text-4xl lg:text-5xl font-semibold leading-tight tracking-tight mb-6">
             Product Manager focused on enterprise workflows, platforms, and AI-driven product improvements</h3>
            
             <p className="text-muted-foreground leading-relaxed mb-8">
