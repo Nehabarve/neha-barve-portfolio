@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Mail, Linkedin, Briefcase, Shield, BarChart3, Cpu, Lightbulb, Users, Scale, UserCheck, Puzzle, ListChecks } from "lucide-react"
+import { ArrowRight, Mail, Linkedin, Briefcase, Shield, BarChart3, Cpu,Workflow, Lightbulb, Users, Scale, UserCheck, Puzzle, ListChecks } from "lucide-react"
 
 const credibilityCards =[
   {
