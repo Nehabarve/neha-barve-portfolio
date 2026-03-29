@@ -291,25 +291,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Preview */}
+       {/* Contact Preview */}
       <section className="px-6 py-16 lg:py-20 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">Get in Touch</p>
             <h2 className="text-3xl lg:text-4xl font-semibold mb-6">Contact</h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              {"I'm open to product, product operations, business analysis, and enterprise platform opportunities."}
+              {"I'm open to product, product operations, business analysis, and product owner opportunites."}
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="mailto:neha.barve@email.com"
+                href="mailto:barveneha05@email.com"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity"
               >
                 <Mail size={18} />
                 Email
               </a>
               <a
-                href="https://linkedin.com/in/nehabarve"
+                href="https://linkedin.com/in/neha-barve"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg font-medium hover:bg-card transition-colors"
