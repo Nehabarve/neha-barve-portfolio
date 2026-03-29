@@ -119,7 +119,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="px-6 py-20 lg:py-28">
+      <section className="px-6 py-16 lg:py-20">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl animate-fade-in">
            
@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       {/* Featured Case Studies */}
-      <section id="work" className="px-6 py-20 lg:py-28 bg-card/50">
+      <section id="work" className="px-6 py-16 lg:py-20 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 animate-fade-in">
          <p className="text-primary text-sm font-medium mb-2">Case Studies</p>  
@@ -213,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* How I Think */}
-      <section id="approach" className="px-6 py-20 lg:py-28">
+      <section id="approach" className="px-6 py-16 lg:py-20">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">My Approach</p>
@@ -237,7 +237,7 @@ export default function Home() {
       </section>
 
       {/* Additional Work */}
-      <section className="px-6 py-20 lg:py-28 bg-card/50">
+      <section className="px-6 py-16 lg:py-20 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">More Projects</p>
@@ -269,7 +269,7 @@ export default function Home() {
       </section>
 
       {/* About Preview */}
-      <section className="px-6 py-20 lg:py-28">
+      <section className="px-6 py-16 lg:py-20">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">Background</p>
@@ -289,7 +289,7 @@ export default function Home() {
       </section>
 
       {/* Contact Preview */}
-      <section className="px-6 py-20 lg:py-28 bg-card/50">
+      <section className="px-6 py-16 lg:py-20 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl animate-fade-in">
             <p className="text-primary text-sm font-medium mb-2">Get in Touch</p>
