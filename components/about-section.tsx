@@ -1,7 +1,7 @@
 "use client"
 
 const stats = [
-  { value: "8+", label: "Years of Experience" },
+  { value: "5+", label: "Years of Experience" },
   { value: "15+", label: "Products Launched" },
   { value: "50M+", label: "Users Impacted" },
   { value: "12+", label: "Countries Served" },
