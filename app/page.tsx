@@ -5,7 +5,7 @@ const credibilityCards =[
   {
     icon: Workflow,
     title: "Workflow Systems",
-    text: "Designing systems that support real operational processes end to end",
+    text: "Designing systems that support real operational workflows end to end",
   },
   {
     icon: Shield,
@@ -15,7 +15,7 @@ const credibilityCards =[
   {
     icon: Briefcase,
     title: "Execution & Delivery",
-    text: "Translating requirements into clear backlog, user stories, and shipped features",
+    text: "Turning requirements into clear backlog, user stories, and shipped features",
   },
   {
     icon: Cpu,
@@ -179,7 +179,7 @@ export default function Home() {
               <Link
                 key={study.slug}
                 href={`/case-studies/${study.slug}`}
-                className="group block p-6 lg:p-8 bg-card rounded-xl border border-border hover:border-primary/30 transition-all"
+                className="group block p-6 lg:p-8 bg-card rounded-2xl border border-border/80 hover:border-primary/40 hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                   <div className="flex-1">
@@ -193,7 +193,7 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300"">
                       {study.title}
                     </h3>
                     <p className="text-muted-foreground">
@@ -201,8 +201,8 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors">
-                      <ArrowRight size={18} className="group-hover:text-primary-foreground transition-colors" />
+                   <div className="w-11 h-11 rounded-full border border-border/80 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:scale-105 transition-all duration-300">
+                      <ArrowRight size={18} className="group-hover:text-primary-foreground transition-all duration-300" />
                     </div>
                   </div>
                 </div>
